@@ -1,0 +1,50 @@
+body{
+    background-color:#6c6f7dff;
+}
+
+h1, h2 {
+    font-family:inherit;
+}
+h1:hover{
+    color: #ccc9e7ff;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+
+h2:hover{
+    color:#caff8aff;
+}
+
+
+.dark-mode {
+    background-color: #2e3138ff;
+    color: aqua;
+  }
+
+  h3{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 40px;
+  }
+
+  img{
+    width: 300px;
+
+}
+
+
+#navbar{
+    justify-content:center;
+    align-items:center;
+}
+
+.moviesandtvshows{
+    width:900px;
+    height:300px;
+    display:flex;
+    justify-content:center;
+    
+}
+

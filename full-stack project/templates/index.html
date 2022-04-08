@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+<h2>{% block title%} Home {% endblock %}</h2>
+
+<div class="moviesandtvshows">
+    
+<img src="{{url_for('static', filename='images/moviesandtvshows.jpg')}}" alt="Image from FFX">
+</div>
+
+
+<p class="large,blue"> Welcome to Davenna's review, where we share our thoughts on some of the lastest tv shows and movies out there. We have a variety of genres for you to decide whether you would want to pick or skip. 
+We are just starting out but look out for our expansion on other areas of life.</p>
+{% endblock%}

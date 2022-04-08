@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'main.css')}}">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{{url_for('static', filename = 'main.js')}}"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{% block title%} {% endblock%} - Fullstack Project</title>
+</head>
+<body>
+    <h1>Davenna's Fullstack Project</h1>
+    <nav>
+       
+        <a href="{{url_for('home')}}">
+            <button>HOME</button>
+        </a>
+        <a href="{{url_for('about')}}">
+            <button>ABOUT</button>
+        </a>
+
+        <a href="{{url_for('tvshows')}}">
+            <button>TVSHOWS</button>
+        </a>
+
+         <a href="{{url_for('movies')}}">  
+            <button>MOVIES</button>
+        </a>
+        <a href="{{url_for('previoustvshows')}}">
+            <button>Previous TVSHOWS</button>
+        </a>
+
+        <a href="{{url_for('previousmovies')}}">
+        <button>Previous MOVIES</button>
+        </a>
+        
+        <button id="activate-dark-mode">DARKMODE</button>
+        
+        </nav>
+        <div>
+            {% block content%} {% endblock%}
+        </div>
+
+</body>
+</html>

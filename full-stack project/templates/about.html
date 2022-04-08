@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+<h2>{% block title%} ABOUT {% endblock %}</h2>
+<div class="moviesandtvshows">
+    
+<img src="{{url_for('static', filename='images/moviesandtvshows.jpg')}}" alt="Image from FFX">
+</div>
+
+<p class="large,blue"> Our website will give you a look at pass, present and future Tvshows and Movies, you know just incase you havent seen something or dont know what is coming out or being made.The creater of this webssite loves watching movies and tvshows and looking beyond the surface of that production.</p>
+{% endblock%}
