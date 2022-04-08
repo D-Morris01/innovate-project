@@ -26,7 +26,7 @@ def previoustvshows():
 
 @app.route("/tvshows")
 def tvshows():
-    return render_template("tvshows")
+    return render_template("tvshows.html")
 
 @app.errorhandler(404)
 def page_not_found(e):

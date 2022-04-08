@@ -1,5 +1,16 @@
 body{
-    background-color:#6c6f7dff;
+   
+    --text-color: black;
+    --bkg-color:#6c6f7dff;
+}
+body.dark-theme {
+    --text-color:aqua;
+    --bkg-color:#2e3138ff;
+}
+body {
+    background: var(--bkg-color);
+    color: var(--text-color);
+    
 }
 
 h1, h2 {
@@ -19,10 +30,10 @@ h2:hover{
 }
 
 
-.dark-mode {
+/* .dark-mode {
     background-color: #2e3138ff;
     color: aqua;
-  }
+  } */
 
   h3{
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -42,7 +53,7 @@ h2:hover{
 
 .moviesandtvshows{
     width:900px;
-    height:300px;
+    height: 30px;
     display:flex;
     justify-content:center;
     
